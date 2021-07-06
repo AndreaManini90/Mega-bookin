@@ -1,5 +1,8 @@
-p {
-  color: green; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-h1 {
-  color: yellow; }
+.header {
+  background-image: linear-gradient(to right, #04D010 0%, #F9F8FD 40%, #F9F8FD 60%, #FD1700 100%);
+  height: 500px; }
