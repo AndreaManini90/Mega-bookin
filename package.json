@@ -1,0 +1,27 @@
+{
+  "name": "mega-bookin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass stylesheet/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaManini90/Mega-bookin.git"
+  },
+  "author": "mega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaManini90/Mega-bookin/issues"
+  },
+  "homepage": "https://github.com/AndreaManini90/Mega-bookin#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.1",    
+    "sass": "^1.35.1"
+  }
+}
