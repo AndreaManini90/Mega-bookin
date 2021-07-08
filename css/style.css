@@ -3,6 +3,57 @@
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 62.5%; }
+
 .header {
   background-image: linear-gradient(to right, #04D010 0%, #F9F8FD 40%, #F9F8FD 60%, #FD1700 100%);
-  height: 500px; }
+  height: 5rem;
+  display: flex; }
+  .header .headerBox {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+  .header #logoHeader {
+    height: 5rem; }
+  .header .headerDx {
+    display: flex;
+    align-content: center;
+    justify-content: space-around; }
+    .header .headerDx #valutaHeader {
+      color: #0975a7;
+      text-align: center;
+      margin-left: 10%;
+      font-family: 'Otomanopee One', sans-serif;
+      font-size: 1.6rem; }
+      .header .headerDx #valutaHeader:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+    .header .headerDx #bandieraITA {
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 2.6rem;
+      width: 2.6rem;
+      border-radius: 1.5rem; }
+      .header .headerDx #bandieraITA:hover {
+        cursor: pointer;
+        transform: scale(1.1); }
+    .header .headerDx .btnHeader {
+      height: 3rem;
+      text-align: center;
+      background-color: #F9F8FD;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      padding: 0 0.5rem; }
+      .header .headerDx .btnHeader:hover {
+        cursor: pointer;
+        background-color: #04D010;
+        transform: scale(1.1); }
+        .header .headerDx .btnHeader:hover p {
+          color: #F9F8FD; }
+      .header .headerDx .btnHeader p {
+        margin: 0.5rem;
+        font-family: 'Otomanopee One', sans-serif;
+        font-size: 1.6rem;
+        color: #0975a7; }

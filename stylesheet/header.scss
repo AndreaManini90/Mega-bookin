@@ -1,6 +1,7 @@
 $color-green: #04D010;
 $color-white: #F9F8FD;
 $color-red: #FD1700;
+$color-azzurro: #0975a7;
 
 .header {
     background-image: linear-gradient(to right , 
@@ -8,5 +9,79 @@ $color-red: #FD1700;
                                     $color-white 40%, 
                                     $color-white 60%, 
                                     $color-red 100%);
-    height: 500px;
+    height: 5rem;
+    display: flex;
+
+    .headerBox {
+        width: 100%;
+        //border: 1px solid blue;
+        display: flex;
+        align-items: center;
+    }
+
+    #logoHeader {
+        height: 5rem;
+    }
+
+    .headerDx {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+
+
+        #valutaHeader {
+            color: rgba($color: $color-azzurro, $alpha: 1.0);
+            text-align: center;
+            margin-left: 10%;
+            font-family: 'Otomanopee One', sans-serif;
+            font-size: 1.6rem;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+
+            }
+        }
+
+        #bandieraITA {
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 2.6rem;
+            width: 2.6rem;
+            border-radius: 1.5rem;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+
+        .btnHeader {
+            height: 3rem;
+            text-align: center;
+            background-color: $color-white;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-green;
+                transform: scale(1.1);
+
+                p {
+                    color: $color-white;
+                }
+            }
+
+            p {
+                margin: 0.5rem;
+                font-family: 'Otomanopee One', sans-serif;
+                font-size: 1.6rem;
+                color: $color-azzurro;  
+            }
+        }
+    }
+
 }
